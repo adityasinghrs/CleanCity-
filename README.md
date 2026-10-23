@@ -4,8 +4,8 @@ A full-stack web app where citizens report garbage problems with a **photo + GPS
 
 **Stack:** React 19 · Node.js / Express · MongoDB Atlas (Mongoose) · JWT auth · Leaflet maps
 
-> Live demo: _add your deployed link here_ &nbsp;|&nbsp; Screenshots: _add to `docs/` and link here_
-
+> Live demo: Backend : https://cleancity-api-3bmc.onrender.com/
+>            Frontend : https://cleancity-p4l4.onrender.com/
 ---
 
 ## Features
