@@ -1,0 +1,23 @@
+# Render Blueprint: New + > Blueprint > pick this repo. Secrets marked sync:false are asked for in the dashboard.
+services:
+  - type: web
+    name: cleancity-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: CLIENT_URL
+        sync: false   # your Vercel URL, no trailing slash
